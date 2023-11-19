@@ -1,0 +1,78 @@
+{
+  "name": "monitor_client",
+  "private": true,
+  "version": "0.0.0",
+  "author": {
+    "name": "sunhy"
+  },
+  "description": "基于vue3 + ts + express + electron的系统监视器",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "chcp 65001 && vite",
+    "build": "rimraf dist-electron && rimraf release && vite build && electron-builder"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "electron": "^27.0.4",
+    "electron-builder": "^24.6.4",
+    "electron-devtools-installer": "^3.2.0",
+    "less": "^4.2.0",
+    "less-loader": "^11.1.3",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-electron": "^0.15.4",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vue-tsc": "^1.8.5"
+  },
+  "build": {
+    "appId": "com.os-monitor.desktop",
+    "productName": "OS Monitor",
+    "asar": true,
+    "copyright": "Copyright © 2023 sunhy",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "./dist",
+      "./package.json",
+      "./dist-electron"
+    ],
+    "mac": {
+      "artifactName": "${productName}_${version}.${ext}",
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "${productName}_${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": false
+    },
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://127.0.0.1:8080"
+      }
+    ],
+    "releaseInfo": {
+      "releaseNotes": "OS Monitor 新一代系统监控软件"
+    }
+  }
+}

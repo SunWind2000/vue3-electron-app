@@ -1,0 +1,9 @@
+.set-svg-img-color(@color) {
+  overflow: hidden;
+  @offset: 999rem;
+  > img {
+    -webkit-filter: drop-shadow(-@offset 0 0 @color);
+    filter: drop-shadow(-@offset 0 0 @color);
+    transform: translate(@offset, 0);
+  }
+}

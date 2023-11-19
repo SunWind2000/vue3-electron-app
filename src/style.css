@@ -1,0 +1,156 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html[data-theme="dark"] {
+  --red-1: #2A1215;
+  --red-2: #431418;
+  --red-3: #58181C;
+  --red-4: #791A1F;
+  --red-5: #A61D24;
+  --red-6: #D22129;
+  --red-7: #E84749;
+  --red-8: #F37370;
+  --red-9: #F89F9A;
+  --red-10: #FAC8C3;
+  --orange-1: #2B1D11;
+  --orange-2: #442A11;
+  --orange-3: #593815;
+  --orange-4: #7C4A15;
+  --orange-5: #AA6215;
+  --orange-6: #D87A16;
+  --orange-7: #E99A3C;
+  --orange-8: #F3B765;
+  --orange-9: #F8CF8D;
+  --orange-10: #FAE3B7;
+  --green-1: #162312;
+  --green-2: #1D3712;
+  --green-3: #274916;
+  --green-4: #306317;
+  --green-5: #3C8618;
+  --green-6: #49AA19;
+  --green-7: #6ABE39;
+  --green-8: #8FD460;
+  --green-9: #B2E58B;
+  --green-10: #D5F2BB;
+  --blue-1: #111D2C;
+  --blue-2: #112A45;
+  --blue-3: #15395B;
+  --blue-4: #164C7E;
+  --blue-5: #1765AD;
+  --blue-6: #177DDC;
+  --blue-7: #3C9AE8;
+  --blue-8: #65B7F3;
+  --blue-9: #8DCFF8;
+  --blue-10: #B7E3FA;
+  --gray-1: #FFFFFF;
+  --gray-2: #FFFFFFD8;
+  --gray-3: #FFFFFFA5;
+  --gray-4: #FFFFFF72;
+  --gray-5: #FFFFFF4C;
+  --gray-6: #FFFFFF33;
+  --gray-7: #FFFFFF1E;
+  --gray-8: #FFFFFF14;
+  --gray-9: #FFFFFF0A;
+  --white: #FFFFFF;
+  --black: #000000;
+  --primary: var(--blue-6);
+  --success: var(--green-6);
+  --warning: var(--orange-6);
+  --danger: var(--red-6);
+  --effect-1: 0 9px 28px 0 rgba(0, 0, 0, 0.2),
+              0 6px 16px 0 rgba(0, 0, 0, 0.32),
+              0 3px 6px 0 rgba(0, 0, 0, 0.48);
+  --effect-2: 0 12px 48px 0 rgba(0, 0, 0, 0.12),
+              0 9px 28px 0 rgba(0, 0, 0, 0.2),
+              0 6px 16px 0 rgba(0, 0, 0, 0.32);
+  --effect-3: 0 9px 28px 0 rgba(0, 0, 0, 0.2),
+              0 6px 16px 0 rgba(0, 0, 0, 0.32),
+              0 3px 6px 0 rgba(0, 0, 0, 0.48);
+  --effect-4: 0 5px 12px 0 rgba(0, 0, 0, 0.36),
+              0 3px 6px 0 rgba(0, 0, 0, 0.48),
+              0 1px 2px 0 rgba(0, 0, 0, 0.64);
+}
+
+:root {
+  --red-1: #FFF1F0;
+  --red-2: #FFCCC7;
+  --red-3: #FFA39E;
+  --red-4: #FF7875;
+  --red-5: #FF4D4F;
+  --red-6: #F5222D;
+  --red-7: #CF1322;
+  --red-8: #A8071A;
+  --red-9: #820014;
+  --red-10: #5C0011;
+  --orange-1: #FFF7E6;
+  --orange-2: #FFE7BA;
+  --orange-3: #FFD591;
+  --orange-4: #FFC069;
+  --orange-5: #FFA940;
+  --orange-6: #FA8C16;
+  --orange-7: #D46B08;
+  --orange-8: #AD4E00;
+  --orange-9: #873800;
+  --orange-10: #612500;
+  --green-1: #F6FFED;
+  --green-2: #D9F7BE;
+  --green-3: #B7EB8F;
+  --green-4: #95DE64;
+  --green-5: #73D13D;
+  --green-6: #52C41A;
+  --green-7: #389E0D;
+  --green-8: #237804;
+  --green-9: #135200;
+  --green-10: #092B00;
+  --blue-1: #E6F4FF;
+  --blue-2: #BAE0FF;
+  --blue-3: #91CAFF;
+  --blue-4: #69B1FF;
+  --blue-5: #4096FF;
+  --blue-6: #1677FF;
+  --blue-7: #0958D9;
+  --blue-8: #003EB3;
+  --blue-9: #002C8C;
+  --blue-10: #001D66;
+  --gray-1: #000000;
+  --gray-2: #000000E0;
+  --gray-3: #00000073;
+  --gray-4: #00000040;
+  --gray-5: #00000026;
+  --gray-6: #0000001A;
+  --gray-7: #0000000F;
+  --gray-8: #0000000A;
+  --gray-9: #00000005;
+  --white: #FFFFFF;
+  --black: #000000;
+  --primary: var(--blue-6);
+  --success: var(--green-6);
+  --warning: var(--orange-6);
+  --danger: var(--red-6);
+  --effect-1: 0 9px 28px 8px rgba(0, 0, 0, 0.05),
+              0 6px 16px 0 rgba(0, 0, 0, 0.08),
+              0 3px 7px -4px rgba(0, 0, 0, 0.12);
+  --effect-2: 0 12px 48px 16px rgba(0, 0, 0, 0.03),
+              0 9px 28px 0 rgba(0, 0, 0, 0.05),
+              0 6px 16px -8px rgba(0, 0, 0, 0.08);
+  --effect-3: 0 9px 28px 8px rgba(0, 0, 0, 0.05),
+              0 6px 16px 0 rgba(0, 0, 0, 0.08),
+              0 3px 7px -4px rgba(0, 0, 0, 0.12);
+  --effect-4: 0 5px 12px 4px rgba(0, 0, 0, 0.09),
+              0 3px 7px 0 rgba(0, 0, 0, 0.12),
+              0 1px 3px -2px rgba(0, 0, 0, 0.16);
+}
+
+html, body, div {
+  margin: 0;
+  padding: 0;
+}
